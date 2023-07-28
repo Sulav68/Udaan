@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Ubuntu&display=swap');
+
+.grid-tm-col {
+  /* grid-template-columns: 3fr 10fr; */
+  grid-template-columns: 300px 1620px ;
+}
+
+.sidebarTabsContents .active {
+  display: block;
+}
+
+.sidebarTabs .active {
+  background-color: #a6a1d4;
+  color: rgb(26, 1, 66);
+}
+
+.header{
+  font-family: 'Oswald', sans-serif;
+  font-size: xx-large;
+
+}
+.header-sm{
+  font-family: 'Oswald', sans-serif;
+  font-size: xx-small;
+}
+
+.text{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main-header{
+  font-size: 48px;
+}
+
+.test:hover{
+  background-color: black;
+  transition-duration: 200ms
+}
+
+.fa-instagram:hover{
+  background: -webkit-linear-gradient(purple,rgb(189, 16, 125),red,orangered,orange,yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 500ms
+}
+
+.fa-facebook:hover{
+  background: -webkit-linear-gradient(#4267B2 100%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 500ms
+}
+.fa-discord:hover{
+  background: -webkit-linear-gradient(#5865F2 100%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 500ms
+}
+
+.fa-twitter:hover{
+  background: -webkit-linear-gradient(#00acee 100%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 500ms
+}
+.fa-linkedin:hover{
+  background: -webkit-linear-gradient(#0072b1 100%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 500ms
+}
+.fa-pinterest:hover{
+  background: -webkit-linear-gradient(#E60023 100%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 500ms
+}
+.fa-youtube:hover{
+  background: -webkit-linear-gradient(#FF0000 100%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 500ms
+}
+.fa-tikrok:hover{
+  background: -webkit-linear-gradient(#ff0050, #00f2ea, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 500ms
+}
+
+.w3-center{text-align:center!important}
+
+@layer components {
+  .footer {
+    @apply bg-blackish w-screen h-auto text-white py-7 px-7 text-2xl flex flex-col space-y-4 justify-center flex-grow-0 overflow-hidden;
+  }
+
+  .big-screen::before {
+    @apply p-5;
+  }
+
+  .dash-tabs {
+    @apply h-[33.33%] grid place-items-center text-[1.2em] font-semibold cursor-pointer;
+  }
+
+  .sidebarContainer {
+    @apply bg-white w-[95vmin] text-base absolute h-[30em] grid grid-tm-col grid-cols-10;
+  }
+  .sidebarTabs {
+    @apply flex flex-col justify-around h-screen bg-lightGray;
+  }
+  .sidebarTabsContents {
+    @apply bg-white py-[1em] px-[1.5em] relative;
+  }
+  
+  .sidebarTabsContents div {
+    @apply hidden;
+  }
+
+  .hovered-get-started{
+    @apply 
+  }
+
+  .footer-i{
+    @apply flex flex-row-reverse space-x-3 float-right
+  }
+}
